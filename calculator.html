@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            text-align: left;
+            background-color: rgb(241, 246, 244);
+            padding: 5cm ;
+            height=100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .login-container
+        {
+            background-color: #68bfd0;
+            padding: 100px;
+            border-radius: 5px;
+            box-shadow: 50px rgba(206, 47, 47, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            width: 210px;
+            height: 50px;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="number"]
+        {
+            width: 300px;
+            height: 30px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <input type="text" id="display">
+    <br>
+    <div>
+    <input type="button"value="AC"onclick="display.value='' ">
+    <input type="button"value="DE"onclick="display.value+='DE'">
+    <input type="button"value="."onclick="display.value+='.'">
+    <input type="button"value="/"onclick="display.value+='/'">
+    <br>
+    </div>
+    <input type="button"value="7"onclick="display.value+='7'">
+    <input type="button"value="8"onclick="display.value+='8'">
+    <input type="button"value="9"onclick="display.value+='9'">
+    <input type="button"value="*"onclick="display.value+='*'">
+    <br>
+    <input type="button"value="6"onclick="display.value+='6'">
+    <input type="button"value="5"onclick="display.value+='5'">
+    <input type="button"value="4"onclick="display.value+='4'">
+    <input type="button"value="-"onclick="display.value+='-'">
+    <br>
+    <input type="button"value="3"onclick="display.value+='3'">
+    <input type="button"value="2"onclick="display.value+='2'">
+    <input type="button"value="1"onclick="display.value+='1'">
+    <input type="button"value="+"onclick="display.value+='+'">
+    <br>
+    <input type="button"value="00"onclick="display.value+='00'">
+    <input type="button"value="0"onclick="display.value+='0'">
+    <input type="button"value="="onclick="display.value+=eval(display.value)">
+    </div>
+    
+</body>
+</html>
